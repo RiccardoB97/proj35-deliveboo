@@ -10570,7 +10570,7 @@ footer .copyright i {
 }
 .right_j .search_card {
   background-color: white;
-  width: 60%;
+  width: 65%;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -10672,6 +10672,6 @@ footer .copyright i {
   #slide_in_l, .lead {
     text-align: center !important;
     width: 100% !important;
-    margin: 0 0 1rem 0 !important;
+    margin: 0 0 0.8rem 0 !important;
   }
 }
