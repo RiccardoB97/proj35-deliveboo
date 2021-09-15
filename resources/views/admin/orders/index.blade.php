@@ -20,8 +20,8 @@
                               <th scope="col">Indirizzo</th>
                               <th scope="col">Telefono</th>
                               <th scope="col">Data</th>
-                              <th scope="col">Piatti</th>
-                              <th scope="col">Totale Ordine</th>
+                              <th scope="col" class='table_dishes'>Piatti</th>
+                              <th scope="col" class="table_total_price">Totale Ordine</th>
                           </tr>
                       </thead>
                       <tbody v-for="order in orders" v-if="order.user_id ===  {{ $user->id }}">
@@ -30,12 +30,12 @@
                               <td>@{{ order . address }}</td>
                               <td>@{{ order . phone_number }}</td>
                               <td>@{{ order . day }}-@{{ order . month_number }}-@{{ order . year }}</td>
-                              <td>
+                              <td class='table_dishes'>
                                   <div v-if="order.dishes[0]">
                                       <div v-for="dish in order.dishes">@{{ dish . name }} {{-- x @{{ dish . pivot . quantity }} --}}</div>
                                   </div>
                               </td>
-                              <td>@{{ order . total_price }} €</td>
+                              <td class="table_total_price">@{{ order . total_price }} €</td>
                           </tr>
                       </tbody>
                   </table>

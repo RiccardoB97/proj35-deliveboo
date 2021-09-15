@@ -10017,6 +10017,12 @@ h3 {
   font-weight: 600;
   color: #1892ca !important;
 }
+#app .user_image img {
+  height: 100px;
+}
+#app .category_list {
+  list-style: none !important;
+}
 
 #app .navbar-brand {
   font-family: "Courgette", cursive;
@@ -10618,6 +10624,11 @@ footer .copyright i {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .user_image img {
+    height: 75px !important;
+  }
+}
 @media screen and (max-width: 768px) {
   #slide_in_l h1 {
     font-size: 3rem !important;
@@ -10627,6 +10638,29 @@ footer .copyright i {
   }
 
   .search_card h3 {
+    display: none;
+  }
+
+  .category_list {
+    text-align: center;
+  }
+  .category_list li {
+    display: inline-block;
+  }
+
+  .user_image_wrapper {
+    text-align: center;
+  }
+
+  td {
+    font-size: 12px !important;
+  }
+
+  .table_dishes {
+    display: none;
+  }
+
+  .table_total_price {
     display: none;
   }
 }
