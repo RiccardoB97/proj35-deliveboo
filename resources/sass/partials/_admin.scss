@@ -1,12 +1,14 @@
 #app{
-    ul{
-        padding-top: 5px;
-        li{
-            font-size: 15px;
-            cursor: pointer;
-            .is_active{
-                font-weight: 600;
-                color: #1892ca !important;
+    nav{
+        ul{
+            padding-top: 5px;
+            li{
+                font-size: 15px;
+                cursor: pointer;
+                .is_active{
+                    font-weight: 600;
+                    color: #1892ca !important;
+                }
             }
         }
     }
@@ -17,6 +19,29 @@
     }
     .category_list{
         list-style: none!important;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li{
+            background-color: $brand-primary;
+            color: white;
+            margin: 1rem 0;
+            width: fit-content;
+            border-radius: 2px;
+            padding: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .details_image_wrapper{
+        height: 100px;
+        .details_image div{
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-position: center center !important;
+            height: 100px !important;
+            border-radius: 5px;
+        }
     }
 }
 

@@ -10006,14 +10006,14 @@ h3 {
     border-color: #dee2e6;
   }
 }
-#app ul {
+#app nav ul {
   padding-top: 5px;
 }
-#app ul li {
+#app nav ul li {
   font-size: 15px;
   cursor: pointer;
 }
-#app ul li .is_active {
+#app nav ul li .is_active {
   font-weight: 600;
   color: #1892ca !important;
 }
@@ -10022,6 +10022,30 @@ h3 {
 }
 #app .category_list {
   list-style: none !important;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#app .category_list li {
+  background-color: #4eab89;
+  color: white;
+  margin: 1rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 2px;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+#app .details_image_wrapper {
+  height: 100px;
+}
+#app .details_image_wrapper .details_image div {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  height: 100px !important;
+  border-radius: 5px;
 }
 
 #app .navbar-brand {
