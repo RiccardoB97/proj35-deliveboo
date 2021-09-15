@@ -25,6 +25,7 @@
 
     h1{
         font-size: 3.5rem;
+        margin: 0px 0px 10px 0px;
         color: white !important;
     }
 
@@ -49,10 +50,12 @@
 
 .right_j{
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 
     .search_card{
         background-color: white;
+        height: 80%;
         width: 65%;
         border-radius: 5px;
         display: flex;
