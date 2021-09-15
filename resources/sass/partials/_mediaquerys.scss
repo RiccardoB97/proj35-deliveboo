@@ -1,4 +1,13 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .user_image{
+        img{
+            height: 75px!important;
+        }
+    }
+}
+
 @media screen and (max-width:768px) {
+    // Jumbotron
     #slide_in_l{
         h1{
             font-size: 3rem!important;
@@ -11,5 +20,16 @@
         h3{
             display: none;
         }
+    }
+
+    // Admin home
+    .category_list{
+        text-align: center;
+        li{
+            display: inline-block;
+        }
+    }
+    .user_image_wrapper{
+        text-align: center;
     }
 }
