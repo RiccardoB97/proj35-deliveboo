@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <!-- Cart -->
+            <!--  Cart  -->
             <div class="col-12 col-lg-4  pr-lg-4 px-0 mt-5">
                 <div class="container position-relative h-100">
                     <div class="row sticky-top mx-0">
