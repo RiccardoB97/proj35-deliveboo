@@ -58,7 +58,7 @@
                 </div>
     
                 <div class="form-group">
-                    <div class="d-flex ml-5 mb-5">
+                    <div class="d-flex ml-5 mb-4">
                         <div>
                             <div>   
                                 <label for="image">Immagine</label>
@@ -71,7 +71,9 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Modifica</button>
+            <button type="submit" class="btn btn-primary">
+                <h5 class="m-0 p-1">Modifica</h5>
+            </button>
         </form>
     </div>
 @endsection

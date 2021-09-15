@@ -30,52 +30,45 @@
                 <small id="priceHelperr" class="form-text text-muted">Inserisci il prezzo del piatto!</small>
             </div>
 
-            <div class="form-group d-flex align-items-start flex-column">
-                <label for="is_visible">Visibile al pubblico</label>
-
-                <div class="form-check">
-                    <input class="form-check-input @error('is_visible') is-invalid @enderror" type="radio" name="is_visible" id="true" value="1" checked>
-                    <label class="form-check-label" for="true">
-                      Visibile
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input @error('is_visible') is-invalid @enderror" type="radio" name="is_visible" id="false" value="0">
-                    <label class="form-check-label" for="false">
-                      Non visibile
-                    </label>
-                  </div>
-
-                <small id="is_visibleHelperr" class="form-text text-muted">Seleziona se il tuo piatto è visibile o meno!</small>
-            </div>
-
-            <div class="form-group">
-                <div>   
-                    <label for="image">Immagine</label>
-                </div>
-                <input type="file" class="@error('image') is-invalid @enderror" name="image" id="image" aria-describedby="imageHelperr" placeholder="Aggiungi un'immagine" required />
-                <small id="imageHelperr" class="form-text text-muted">Inserisci un'immagine del piatto! (max 50 KB)</small>
-            </div>
-
             <div class="form-group">
                 <label for="description">Descrizione</label>
                 <textarea required class="form-control @error('description') is-invalid @enderror" name="description" id="description" rows="5">{{ old('description') }}</textarea>
             </div>
-            
-            {{-- <div class="form-group">
-                <label for="tags">Tags</label>
-                <select class="form-control @error('tags') is-invalid @enderror" name="tags[]" id="tags" multiple>
-                    metto tags[] perchè mi serve array (posso scegliere più di un tag per post)
-                    <option value="" disabled>Seleziona un tag</option>
-                    @if ($tags)
-                        @foreach ($tags as $tag)
-                            <option value="{{ $tag->id }}">{{ $tag->name }}</option>
-                        @endforeach
-                    @endif
-                </select>
-            </div> --}}
 
-            <button type="submit" class="btn btn-primary">Crea</button>
+            <div class="d-flex justify-content-start">
+                <div class="form-group d-flex align-items-start flex-column">
+                    <label for="is_visible">Visibile al pubblico</label>
+    
+                    <div class="form-check">
+                        <input class="form-check-input @error('is_visible') is-invalid @enderror" type="radio" name="is_visible" id="true" value="1" checked>
+                        <label class="form-check-label" for="true">
+                          Visibile
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input @error('is_visible') is-invalid @enderror" type="radio" name="is_visible" id="false" value="0">
+                        <label class="form-check-label" for="false">
+                          Non visibile
+                        </label>
+                      </div>
+    
+                    <small id="is_visibleHelperr" class="form-text text-muted">Seleziona se il tuo piatto è visibile o meno!</small>
+                </div>
+    
+                <div class="form-group">
+                    <div class="ml-5 mb-4">
+                        <div>   
+                            <label for="image">Immagine</label>
+                        </div>
+                        <input type="file" class="@error('image') is-invalid @enderror" name="image" id="image" aria-describedby="imageHelperr" placeholder="Aggiungi un'immagine" required />
+                        <small id="imageHelperr" class="form-text text-muted">Inserisci un'immagine del piatto! (max 50 KB)</small>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">
+                <h5 class="m-0 p-1">Crea</h5>
+            </button>
         </form>
     </div>
 @endsection
