@@ -3,32 +3,37 @@
 @section('content')
 
     <!-- jumbotron -->
-    <div class="container-fluid jumbo-fluid">
-        <div class="row w-100 justify-content-center mx-0">
-            <div class="col-lg-6 col-sm-12 left_j" id="slide_in_l">
-                <h1>Ci pensiamo noi.</h1>
-                <p class="lead">Il delivery <em>veloce</em> <br> per quando l'appetito chiama</p>
-            </div>
-            <!-- jumbo img -->
-            <div class="col-lg-6 col-sm-12 right px-0">
-                <div class="search_card">
-                    <h3>Cerca il tuo ristorante preferito</h3>
-                    @if (Route::currentRouteName() == 'restaurants')
-                    <div class="searchbar">
-                        <form @submit.prevent="view">
-                                <input id="search-focus" type="search" id="form1" placeholder="Cerca"
-                                    v-model="search">
-                            <button type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </form>
+    <div class="{{-- container-fluid --}} jumbo-fluid">
+        <div class="container">
+            <div class="row d-flex justify-content-between mx-0">
+
+                    <div class="col-lg-6 col-sm-12 p-0 {{-- left_j --}}" id="slide_in_l">
+                        <h1>Ci pensiamo noi.</h1>
+                        <p class="lead">Il delivery <em>veloce</em> <br> per quando l'appetito chiama</p>
                     </div>
-                @endif
-                </div>
+                    
+                    <div class="col-lg-6 col-sm-12 right_j px-0">
+                        <div class="search_card">
+                            <h3>Cerca il tuo ristorante preferito</h3>
+                            @if (Route::currentRouteName() == 'restaurants')
+                            <div class="searchbar">
+                                <form @submit.prevent="view">
+                                        <input id="search-focus" type="search" id="form1" placeholder="Cerca"
+                                            v-model="search">
+                                    <button type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        @endif
+                        </div>
+                    </div>
+                
             </div>
         </div>
     </div>
     <!-- /jumbotron -->
+
     <div class="container">
         <div class="row cat_search">
             <div class="col-lg-12 col-sm-12">
