@@ -10566,7 +10566,7 @@ footer .copyright i {
 }
 .right_j {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .right_j .search_card {
   background-color: white;
@@ -10662,5 +10662,16 @@ footer .copyright i {
 
   .table_total_price {
     display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .right_j {
+    justify-content: center !important;
+  }
+
+  #slide_in_l, .lead {
+    text-align: center !important;
+    width: 100% !important;
+    margin: 0 0 1rem 0 !important;
   }
 }
