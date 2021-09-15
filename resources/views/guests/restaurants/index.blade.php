@@ -4,7 +4,7 @@
 
     <!-- jumbotron -->
     <div class="container-fluid jumbo-fluid">
-        <div class="row jumbo_row">
+        <div class="row w-100 justify-content-center mx-0">
             <div class="col-lg-6 col-sm-12 left_j" id="slide_in_l">
                 <h1>Ci pensiamo noi.</h1>
                 <p class="lead">Il delivery <em>veloce</em> <br> per quando l'appetito chiama</p>
@@ -16,8 +16,8 @@
                     @if (Route::currentRouteName() == 'restaurants')
                     <div class="searchbar">
                         <form @submit.prevent="view">
-                            <input id="search-focus" type="search" id="form1" placeholder="Cerca"
-                                v-model="search">
+                                <input id="search-focus" type="search" id="form1" placeholder="Cerca"
+                                    v-model="search">
                             <button type="submit">
                                 <i class="fas fa-search"></i>
                             </button>
@@ -55,7 +55,7 @@
         </div>
 
         <h1>RISTORANTI</h1>
-        <div class="restaurants">
+        <div class="restaurants" id='restaurant_list'>
             <div  v-for='user in users ' class='col-lg-4 col-md-6 col-12'>
                 <a :href="'/' + user.id">
                 <div class="restaurant"  :style="{ backgroundImage: 'url(\'storage/' + user.restaurant_image + '\')' }">
