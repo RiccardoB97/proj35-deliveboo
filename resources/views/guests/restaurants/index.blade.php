@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- jumbotron -->
-    <div class="{{-- container-fluid --}} jumbo-fluid">
+    <div class="jumbo-fluid">
         <div class="container">
             <div class="row d-flex justify-content-between mx-0">
 
