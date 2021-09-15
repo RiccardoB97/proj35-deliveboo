@@ -17,7 +17,7 @@
         margin: auto;
         margin-top: 40px;
         background-color: white;
-        border-radius: 10px;
+        border-radius: 5px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         height: 150px!important;
         tr{
@@ -34,7 +34,7 @@
         }
             tbody{
                 .description_wrapper{
-                    overflow: auto;
+                    /* overflow: auto; */
                     max-height: 170px;
 
                     .description{
@@ -44,7 +44,7 @@
                 td{
                     width: calc(100% / 5);
                     padding: 2rem 0;
-                    overflow-y: auto;
+                    /* overflow-y: auto; */
 
                     span{
                         font-size: 18px;
@@ -70,7 +70,7 @@
         .green{
             background-color: white;
             color: black;
-            border-radius: 4px;
+            border-radius: 3px;
 
             &:hover{
                 background-color: rgb(73, 230, 73);
@@ -80,7 +80,7 @@
         .red{
             background-color: white;
             color: black;
-            border-radius: 4px;
+            border-radius: 3px;
 
             &:hover{
                 background-color: red;
@@ -90,7 +90,7 @@
         .blue{
             background-color: white;
             color: black;
-            border-radius: 4px;
+            border-radius: 3px;
 
             &:hover{
                 background-color: rgb(79, 93, 223);

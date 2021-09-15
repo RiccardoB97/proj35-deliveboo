@@ -34,12 +34,7 @@
                         </div>
                         <div class="container">
                             <div class="row">
-<<<<<<< HEAD
                                 <div class="col-12 mx-xl-4 mx-lg-3 mx-md-4 mx-sm-3 mx-0 col-sm-5 col-md-5 col-lg-5 col-xl-5 p-0 dish" v-for="(dish, index) in dishes" v-if="dish.user_id == {{$user->id}} && dish.is_visible == true">
-=======
-                                <div class="col-12 mx-xl-4 mx-lg-3 mx-md-4 mx-sm-3 mx-0 col-sm-5 col-md-5 col-lg-5 col-xl-5 p-0 dish"
-                                    v-for="(dish, index) in dishes" v-if="dish.user_id == {{ $user->id }}">
->>>>>>> 9a2feff70562ae1b4c39a8f64fe79d010cc9de3b
                                     <div class="description">
                                         <div>
                                             <h4 class="dish_name">@{{ dish . name }}</h4>

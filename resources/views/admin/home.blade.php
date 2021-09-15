@@ -17,7 +17,7 @@
         </div>
 
         <div class="row justify-content-center mt-3 mx-0">
-            <div class="col-md-6 card shadow p-3 mb-5 bg-white rounded">
+            <div class="col-6 card shadow p-3 mb-5 bg-white rounded">
                 <div class="card-body p-0">
                     <div class="container">
                         <div class="row details_image_wrapper">
