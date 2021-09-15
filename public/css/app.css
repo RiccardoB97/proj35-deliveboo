@@ -10528,6 +10528,11 @@ footer .copyright i {
 }
 #slide_in_l .lead {
   font-size: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  margin-left: 7%;
 }
 
 @-webkit-keyframes slideIn {
@@ -10553,11 +10558,11 @@ footer .copyright i {
     transform: skew(0deg);
   }
 }
-.right {
+.right_j {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
-.right .search_card {
+.right_j .search_card {
   background-color: white;
   width: 60%;
   border-radius: 5px;
@@ -10570,7 +10575,7 @@ footer .copyright i {
   padding: 20px 5px;
   text-align: center;
 }
-.right .search_card h3 {
+.right_j .search_card h3 {
   margin-bottom: 12px;
   color: #4eab89 !important;
 }

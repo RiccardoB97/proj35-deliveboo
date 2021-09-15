@@ -30,6 +30,9 @@
 
     .lead{
         font-size: 1.5rem;
+        width: fit-content;
+        text-align: center;
+        margin-left: 7%;
     }
 }
 @keyframes slideIn {
@@ -44,9 +47,9 @@
     }
 }
 
-.right{
+.right_j{
     display: flex;
-    justify-content: center;
+    justify-content: end;
 
     .search_card{
         background-color: white;
@@ -90,4 +93,5 @@
         text-align: center;
     }
 }
+
 
