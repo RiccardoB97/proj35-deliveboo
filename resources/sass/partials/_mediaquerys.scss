@@ -32,4 +32,15 @@
     .user_image_wrapper{
         text-align: center;
     }
+
+    // Admin orders
+    td{
+        font-size: 12px!important;
+    }
+    .table_dishes{
+        display: none;
+    }
+    .table_total_price{
+        display: none;
+    }
 }
