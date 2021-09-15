@@ -10519,8 +10519,8 @@ footer .copyright i {
 }
 
 #slide_in_l {
-  -webkit-animation: slideIn 1.5s ease-in;
-          animation: slideIn 1.5s ease-in;
+  -webkit-animation: slideLeft 1.5s ease-in;
+          animation: slideLeft 1.5s ease-in;
 }
 #slide_in_l h1 {
   font-size: 3.5rem;
@@ -10530,7 +10530,7 @@ footer .copyright i {
   font-size: 1.5rem;
 }
 
-@-webkit-keyframes slideIn {
+@-webkit-keyframes slideLeft {
   0% {
     transform: skew(-45deg) translateX(-500px);
   }
@@ -10542,7 +10542,7 @@ footer .copyright i {
   }
 }
 
-@keyframes slideIn {
+@keyframes slideLeft {
   0% {
     transform: skew(-45deg) translateX(-500px);
   }
@@ -10564,8 +10564,8 @@ footer .copyright i {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-animation: spin 1s ease;
-          animation: spin 1s ease;
+  -webkit-animation: slideRight 1.5s ease;
+          animation: slideRight 1.5s ease;
   flex-direction: column;
   padding: 20px 5px;
   text-align: center;
@@ -10575,33 +10575,27 @@ footer .copyright i {
   color: #4eab89 !important;
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes slideRight {
   0% {
-    transform: scaleX(0);
-  }
-  40% {
-    transform: scaleX(0.4);
+    transform: skew(45deg) translateX(500px);
   }
   60% {
-    transform: scaleX(0.6);
+    transform: skew(0deg) translateX(-30px);
   }
   100% {
-    transform: scaleX(1);
+    transform: skew(0deg);
   }
 }
 
-@keyframes spin {
+@keyframes slideRight {
   0% {
-    transform: scaleX(0);
-  }
-  40% {
-    transform: scaleX(0.4);
+    transform: skew(45deg) translateX(500px);
   }
   60% {
-    transform: scaleX(0.6);
+    transform: skew(0deg) translateX(-30px);
   }
   100% {
-    transform: scaleX(1);
+    transform: skew(0deg);
   }
 }
 .cat_search {
