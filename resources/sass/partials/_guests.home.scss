@@ -1,6 +1,4 @@
 .restaurant_container{
-    max-width: 1170px;
-    margin: auto;
     .deselect{
         background-color: $brand-secondary;
         color: white;
@@ -43,13 +41,12 @@
         }
     }
     h1{
-        margin: 30px 0px 15px 29px;
-        margin: 30px 0px 10px 15px;
+        margin: 30px 0px 10px 10px;
         font-size: 35px;
         margin-bottom: 20px;
     }
     .restaurants{
-        margin: 15px 15px 50px 15px;
+        margin: 15px 0px 50px 0px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
