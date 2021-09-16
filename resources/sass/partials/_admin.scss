@@ -20,27 +20,27 @@
     .category_list{
         list-style: none!important;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         flex-wrap: wrap;
         li{
             background-color: $brand-primary;
             color: white;
-            margin: 1rem 0;
-            width: fit-content;
+            margin: 0.8rem 0.8rem 0 0;
+            width: 120px;
+            text-align: center;
             border-radius: 2px;
-            padding: 0.5rem;
-            margin-right: 0.5rem;
+            padding: 0.4rem;
         }
     }
 
     .details_image_wrapper{
-        height: 100px;
+        height: 135px;
         .details_image div{
             background-repeat: no-repeat !important;
             background-size: cover !important;
             background-position: center center !important;
-            height: 100px !important;
-            border-radius: 5px;
+            height: 135px !important;
+            border-radius: 3px;
         }
     }
 }

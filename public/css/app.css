@@ -10023,29 +10023,27 @@ h3 {
 #app .category_list {
   list-style: none !important;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 #app .category_list li {
   background-color: #4eab89;
   color: white;
-  margin: 1rem 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  margin: 0.8rem 0.8rem 0 0;
+  width: 120px;
+  text-align: center;
   border-radius: 2px;
-  padding: 0.5rem;
-  margin-right: 0.5rem;
+  padding: 0.4rem;
 }
 #app .details_image_wrapper {
-  height: 100px;
+  height: 135px;
 }
 #app .details_image_wrapper .details_image div {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
-  height: 100px !important;
-  border-radius: 5px;
+  height: 135px !important;
+  border-radius: 3px;
 }
 
 #app .navbar-brand {
@@ -10449,7 +10447,7 @@ footer .copyright i {
   margin: auto;
   margin-top: 40px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   height: 150px !important;
 }
@@ -10463,7 +10461,7 @@ footer .copyright i {
   margin-bottom: -10px;
 }
 .admin_dishes table tbody .description_wrapper {
-  overflow: auto;
+  /* overflow: auto; */
   max-height: 170px;
 }
 .admin_dishes table tbody .description_wrapper .description {
@@ -10472,7 +10470,7 @@ footer .copyright i {
 .admin_dishes table tbody td {
   width: calc(100% / 5);
   padding: 2rem 0;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 .admin_dishes table tbody td span {
   font-size: 18px;
@@ -10495,7 +10493,7 @@ footer .copyright i {
 .admin_dishes form .green {
   background-color: white;
   color: black;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 .admin_dishes form .green:hover {
   background-color: #49e649;
@@ -10504,7 +10502,7 @@ footer .copyright i {
 .admin_dishes form .red {
   background-color: white;
   color: black;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 .admin_dishes form .red:hover {
   background-color: red;
@@ -10513,7 +10511,7 @@ footer .copyright i {
 .admin_dishes form .blue {
   background-color: white;
   color: black;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 .admin_dishes form .blue:hover {
   background-color: #4f5ddf;

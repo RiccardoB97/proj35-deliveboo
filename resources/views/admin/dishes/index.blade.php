@@ -1,9 +1,15 @@
 @extends('layouts.admin')
 
 @section('content')
+
+<div class="container">
+    <div class="text-right">
+        <a href="{{route('admin.dishes.create')}}" class="btn btn-brand-secondary text-white">Nuovo piatto <i class="fa fa-plus pl-2" aria-hidden="true"></i></a>
+    </div>
+</div>
+
 <div class="d-flex flex-column align-items-center">
-    <h1 class="text-center">I tuoi piatti</h1>
-    <a href="{{route('admin.dishes.create')}}" class="btn btn-brand-secondary text-white">Aggiungi un nuovo piatto <i class="fa fa-plus" aria-hidden="true"></i></a>
+    <h1 class="text-center m-0">I tuoi piatti</h1>
 </div>
 
 <div class="admin_dishes">
